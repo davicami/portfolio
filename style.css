@@ -152,3 +152,50 @@ section#contact {
     width: 24px;
     height: auto;
 }
+
+.contact-container{
+    display: grid;
+    grid-template-columns: auto 300px;
+    align-items: start;
+    justify-content: start;
+}
+
+.contact-image{
+    grid-column: 2/3;
+}
+
+.contact-text{
+    grid-column: 1/2;
+    display: grid;
+    gap: 20px;
+    color: white;
+}
+
+.contact-text{
+    padding: 40px;
+}
+
+.contact-image > img{
+    max-width: 500px;
+    height: auto;
+}
+
+.contact-icons img{
+    width: 32px;
+    height: auto;
+}
+
+.contact-icons{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.contact-phone, .contact-email{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}   
