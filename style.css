@@ -5,6 +5,8 @@
     --yellow-400: #FACC15;
     --grey-300: #dde2eb;
     --white: #FFF;
+    --black: #000;
+
 }
 
 *,
@@ -32,6 +34,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 nav {
@@ -39,7 +42,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--white); 
+    background: var(--grey-300);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
@@ -71,53 +74,68 @@ section#contact {
     background-color: var(--blue-500);
 }
 
-.about-text{
+.about-text {
     background-color: var(--white);
     padding: 40px;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.about-image > img{
+.about-image>img {
     width: 300px;
     height: auto;
 }
 
-.about-container{
+.about-container {
     display: grid;
     grid-template-columns: 300px auto;
     align-items: center;
     justify-content: start;
 }
 
-.about-image{
+.about-image {
     grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.about-text{
+.about-caption {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.about-caption>p {
+    font-size: 2.5em;
+    color: white;
+    margin-top: 230px;
+}
+
+.about-text {
     grid-column: 2/3;
+    grid-row: 1/2;
     display: grid;
     gap: 20px;
 }
 
-.about-icons img{
+.about-icons img {
     width: 32px;
     height: auto;
 }
 
-.about-icons{
+.about-icons {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
     gap: 10px;
 }
 
-#projects h1{
+#projects h1 {
     padding-bottom: 20px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns:  repeat(auto-fit,  minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     gap: 30px;
 }
@@ -129,73 +147,73 @@ section#contact {
     padding: 20px;
 
     display: grid;
-    grid-template-rows: 1fr auto ;
+    grid-template-rows: 1fr auto;
     gap: 20px;
 }
 
-.project-image{
+.project-image {
     width: 100%;
     height: auto;
 }
 
-.project-title{
+.project-title {
 
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr auto;
 }
 
-.project-description{
-}
+.project-description {}
 
-.project-github-icon{
+.project-github-icon {
     width: 24px;
     height: auto;
 }
 
-.contact-container{
+.contact-container {
     display: grid;
     grid-template-columns: auto 300px;
     align-items: start;
     justify-content: start;
 }
 
-.contact-image{
+.contact-image {
     grid-column: 2/3;
 }
 
-.contact-text{
+.contact-text {
     grid-column: 1/2;
     display: grid;
     gap: 20px;
     color: white;
 }
 
-.contact-text{
+.contact-text {
     padding: 40px;
 }
 
-.contact-image > img{
+.contact-image>img {
     max-width: 500px;
     height: auto;
 }
 
-.contact-icons img{
+.contact-icons img {
     width: 32px;
     height: auto;
 }
 
-.contact-icons{
+.contact-icons {
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     gap: 10px;
 }
 
-.contact-phone, .contact-email{
+.contact-phone,
+.contact-email {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     justify-content: start;
     gap: 5px;
-}   
+}
