@@ -78,19 +78,16 @@ section#about {
 
 section#projects {
     background-color: var(--white);
-    padding: 20px;
 }
 
 section#contact {
     background-color: var(--blue-500);
 }
 
-
-
 .about-container {
-    padding: 20px;
+    padding: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-content: start;
 }
@@ -113,7 +110,7 @@ section#contact {
 }
 
 .about-caption>p {
-    font-size: 2.5em;
+    font-size: 3em;
     color: white;
 }
 .about-text {
@@ -146,6 +143,7 @@ section#contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    padding: 60px;
 }
 
 .project-card {
@@ -178,9 +176,9 @@ section#contact {
 }
 
 .contact-container {
-    padding: 20px;
+    padding: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     justify-content: start;
 }
@@ -192,7 +190,7 @@ section#contact {
 }
 
 .contact-text {
-    padding: 40px;
+    padding: 20px;
 }
 
 .contact-image {
@@ -223,12 +221,12 @@ section#contact {
 
     .about-container{
         padding: 20px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
 
     .projects-grid {
         grid-template-columns: 1fr 1fr;
+        padding:20px
     }
 
     .contact-container{
@@ -246,6 +244,7 @@ section#contact {
 
     .projects-grid {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     .contact-container{
